@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codes Course | Learn. Create. Grow.</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icons (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="Codes Course Logo" onerror="this.outerHTML='<span class=\'logo-text\'>Codes Course</span>'">
+            </a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#courses">Courses</a>
+                <a href="#teachers">Teachers</a>
+                <a href="#benefits">Benefits</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <a href="https://wa.me/628159861435?text=Halo..." target="_blank" class="btn btn-primary nav-btn">Chat Admin</a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container hero-container reveal-up">
+            <!-- Tambahkan baris logo ini -->
+            <img src="Logo.png" alt="Codes Course Logo" class="hero-logo">
+            
+            <h1>Learn. <span class="highlight-purple">Create.</span> <span class="highlight-orange">Grow.</span></h1>
+            <p>Tingkatkan skill masa depanmu bersama Codes Course. Platform belajar online modern untuk menguasai desain, coding, dan bahasa Inggris dengan mudah dan praktis.</p>
+            <div class="hero-buttons">
+                <a href="#courses" class="btn btn-primary">Explore Courses</a>
+                <a href="https://wa.me/628159861435?text=Halo..." target="_blank" class="btn btn-outline">Chat Admin</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container reveal-up">
+            <div class="section-title">
+                <h2>About Codes Course</h2>
+                <p>Pembelajaran online yang dirancang agar mudah dipahami, interaktif, dan aplikatif untuk semua level.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card reveal-up">
+                    <i class="fas fa-book-open"></i>
+                    <h3>3 Courses</h3>
+                    <p>Fokus pada skill paling dicari saat ini.</p>
+                </div>
+                <div class="about-card reveal-up" style="transition-delay: 0.1s;">
+                    <i class="fas fa-laptop-house"></i>
+                    <h3>Online Learning</h3>
+                    <p>Belajar dari mana saja dengan fleksibel.</p>
+                </div>
+                <div class="about-card reveal-up" style="transition-delay: 0.2s;">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Experienced Teachers</h3>
+                    <p>Dibimbing langsung oleh praktisi ahli.</p>
+                </div>
+                <div class="about-card reveal-up" style="transition-delay: 0.3s;">
+                    <i class="fas fa-tools"></i>
+                    <h3>Practical Learning</h3>
+                    <p>Berbasis proyek, bukan sekadar teori.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses section-padding bg-light">
+        <div class="container reveal-up">
+            <div class="section-title">
+                <h2>Our Courses</h2>
+                <p>Pilih kelas yang sesuai dengan minat dan tujuanmu.</p>
+            </div>
+            <div class="course-grid">
+                <!-- Course 1 -->
+                <div class="course-card reveal-scale">
+                    <div class="course-icon" style="background: rgba(124, 58, 237, 0.1); color: var(--purple);">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    <h3>Figma Design</h3>
+                    <p>Pelajari UI Design, layout, wireframe, dan dasar-dasar desain digital menggunakan Figma.</p>
+                    <span class="target-badge">Untuk: Pemula & Menengah</span>
+                    <button class="btn btn-outline-full open-modal" data-course="figma">Learn More</button>
+                </div>
+                <!-- Course 2 -->
+                <div class="course-card reveal-scale" style="transition-delay: 0.1s;">
+                    <div class="course-icon" style="background: rgba(249, 115, 22, 0.1); color: var(--orange);">
+                        <i class="fas fa-cat"></i>
+                    </div>
+                    <h3>Scratch</h3>
+                    <p>Pahami logika pemrograman dengan cara yang menyenangkan, visual, dan mudah dipahami.</p>
+                    <span class="target-badge">Untuk: Anak & Pemula</span>
+                    <button class="btn btn-outline-full open-modal" data-course="scratch">Learn More</button>
+                </div>
+                <!-- Course 3 -->
+                <div class="course-card reveal-scale" style="transition-delay: 0.2s;">
+                    <div class="course-icon" style="background: rgba(10, 25, 47, 0.1); color: var(--navy);">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>English</h3>
+                    <p>Tingkatkan kemampuan vocabulary, grammar, speaking, listening, dan conversation sehari-hari.</p>
+                    <span class="target-badge">Untuk: Semua Umur</span>
+                    <button class="btn btn-outline-full open-modal" data-course="english">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teachers Section -->
+    <section id="teachers" class="teachers section-padding">
+        <div class="container reveal-up">
+            <div class="section-title">
+                <h2>Meet Our Teachers</h2>
+                <p>Belajar langsung dari instruktur yang berpengalaman di bidangnya.</p>
+            </div>
+            <div class="teacher-grid">
+                <div class="teacher-card reveal-up">
+                    <img src="Qadli.jpeg" alt="Guru Figma" class="teacher-img">
+                    <h3>Qadli Raissa Dzaky</h3>
+                    <span class="teacher-course">Figma Design Instructor</span>
+                    <p>"Praktisi UI/UX berpengalaman yang siap membimbingmu mengubah ide kreatif menjadi desain antarmuka digital yang fungsional, modern, dan berstandar profesional."</p>
+                </div>
+                <div class="teacher-card reveal-up" style="transition-delay: 0.1s;">
+                    <img src="Kanawa.png" alt="Guru Scratch" class="teacher-img">
+                    <h3>Kanawa Alfarezel banyu Ramlan</h3>
+                    <span class="teacher-course">Scratch Instructor</span>
+                    <p>"Instruktur coding interaktif yang ahli dalam menyederhanakan logika pemrograman. Belajar coding menjadi sebuah pengalaman visual yang menyenangkan dan sangat mudah dipahami oleh pemula."  </p>
+                </div>
+                <div class="teacher-card reveal-up" style="transition-delay: 0.2s;">
+                    <img src="Yusuf.jpeg" alt="Guru English" class="teacher-img">
+                    <h3>Fadhilah Yusuf Kurniawan</h3>
+                    <span class="teacher-course">English Instructor</span>
+                    <p>"Ahli bahasa dengan pendekatan belajar yang komunikatif dan interaktif. Berfokus untuk membantumu tampil lebih percaya diri dalam speaking, listening, dan percakapan bahasa Inggris sehari-hari."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits section-padding bg-light">
+        <div class="container reveal-up">
+            <div class="section-title">
+                <h2>Why Choose Codes Course?</h2>
+            </div>
+            <div class="benefit-grid">
+                <div class="benefit-item reveal-up"><i class="fas fa-wifi"></i> Online Learning</div>
+                <div class="benefit-item reveal-up"><i class="fas fa-clock"></i> Flexible Learning</div>
+                <div class="benefit-item reveal-up"><i class="fas fa-hammer"></i> Practical Lessons</div>
+                <div class="benefit-item reveal-up"><i class="fas fa-seedling"></i> Beginner Friendly</div>
+                <div class="benefit-item reveal-up"><i class="fas fa-user-tie"></i> Experienced Teachers</div>
+                <div class="benefit-item reveal-up"><i class="fas fa-comments"></i> Interactive Learning</div>
+                <div class="benefit-item reveal-up"><i class="fas fa-project-diagram"></i> Project Based</div>
+                <div class="benefit-item reveal-up"><i class="fas fa-globe"></i> Learn From Anywhere</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works section-padding">
+        <div class="container reveal-up">
+            <div class="section-title">
+                <h2>How It Works</h2>
+                <p>Pendaftaran, jadwal, dan pembayaran diurus dengan mudah melalui admin kami.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card reveal-scale">
+                    <div class="step-number">01</div>
+                    <h3>Choose Course</h3>
+                    <p>Pilih kursus yang ingin kamu pelajari.</p>
+                </div>
+                <div class="step-card reveal-scale" style="transition-delay: 0.1s;">
+                    <div class="step-number">02</div>
+                    <h3>Contact Admin</h3>
+                    <p>Hubungi admin kami melalui WhatsApp.</p>
+                </div>
+                <div class="step-card reveal-scale" style="transition-delay: 0.2s;">
+                    <div class="step-number">03</div>
+                    <h3>Get Info</h3>
+                    <p>Dapatkan jadwal & informasi pembayaran.</p>
+                </div>
+                <div class="step-card reveal-scale" style="transition-delay: 0.3s;">
+                    <div class="step-number">04</div>
+                    <h3>Start Learning</h3>
+                    <p>Mulai kelas dan tingkatkan skillmu!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section-padding bg-light">
+        <div class="container reveal-up">
+            <div class="section-title">
+                <h2>Course Pricing</h2>
+                <p>Investasi terbaik untuk masa depanmu.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card reveal-up">
+                    <h3>Figma Design</h3>
+                    <div class="price">[Rp 150.000] <span>/ month</span></div>
+                    <a href="https://wa.me/628159861435?text=Halo..." target="_blank" class="btn btn-outline-full">Ask About Pricing</a>
+                </div>
+                <div class="pricing-card reveal-up popular">
+                    <div class="popular-badge">Most Fun</div>
+                    <h3>Scratch</h3>
+                    <div class="price">[Rp 100.000] <span>/ month</span></div>
+                    <a href="https://wa.me/6282120159158?text=Halo..." target="_blank" class="btn btn-primary">Ask About Pricing</a>
+                </div>
+                <div class="pricing-card reveal-up">
+                    <h3>English</h3>
+                    <div class="price">[Rp 80.000] <span>/ month</span></div>
+                    <a href="https://wa.me/6282121658997?text=Halo..." target="_blank" class="btn btn-outline-full">Ask About Pricing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq section-padding">
+        <div class="container reveal-up">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">Apa itu Codes Course? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Codes Course adalah tempat belajar online untuk mengembangkan skill desain, coding, dan bahasa Inggris dengan materi praktis.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Kursus apa saja yang tersedia? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Saat ini kami menyediakan 3 kelas utama: Figma Design, Scratch (Coding Dasar), dan English.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Apakah pembelajaran dilakukan secara online? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Ya, semua kelas dilakukan 100% online sehingga kamu bisa belajar dari mana saja.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Siapa yang bisa mengikuti kursus? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Siapa saja! Kami memiliki pendekatan yang ramah pemula, baik untuk anak-anak (Scratch) hingga dewasa.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Berapa harga kursus? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Harga kursus bervariasi. Silakan hubungi admin via WhatsApp untuk mendapatkan daftar harga terbaru dan promo yang sedang berjalan.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Bagaimana cara mendaftar? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Pendaftaran sepenuhnya dibantu oleh admin. Klik tombol "Chat Admin", pilih kelas, dan admin akan memandumu memproses pendaftaran.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Bagaimana cara melakukan pembayaran? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Instruksi pembayaran (transfer bank/e-wallet) akan diberikan langsung oleh admin kami melalui WhatsApp setelah kamu memilih jadwal kelas.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Bagaimana cara menghubungi admin? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Kamu bisa mengklik tombol "Chat Admin" yang ada di website ini untuk langsung terhubung ke WhatsApp kami.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta reveal-scale">
+        <div class="container">
+            <h2>Ready to Start Learning?</h2>
+            <p>Choose your course and contact our admin to get started.</p>
+            <a href="https://wa.me/628159861435?text=Halo..." target="_blank" class="btn btn-primary btn-large">Chat Admin on WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="#" class="logo footer-logo">
+                    <img src="Logo.png" alt="Codes Course Logo" onerror="this.outerHTML='<span class=\'logo-text\'>Codes Course</span>'">
+                </a>
+                <p>Platform belajar online modern untuk menguasai skill masa depan. Learn. Create. Grow.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#courses">Courses</a>
+                <a href="#teachers">Teachers</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <a href="https://wa.me/628159861435?text=Halo..."><i class="fab fa-whatsapp"></i> +62 815-9861-435</a>
+                <a href="#"><i class="far fa-envelope"></i> idnqadliraissadzaky@gmail.com</a>
+                <a href="#"><i class="fab fa-instagram"></i> @codescourse</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Codes Course. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals untuk Course Detail -->
+<!-- Figma Modal -->
+    <div class="modal" id="modal-figma">
+        <div class="modal-content">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <h2>Figma Design</h2>
+            <div class="modal-body">
+                
+                <h4>Overview</h4>
+                <p>Pelajari cara merancang antarmuka pengguna (UI) yang indah dan fungsional. Kursus ini membahas dasar-dasar Figma dari nol hingga membuat prototipe interaktif.</p>
+                
+                <h4>What You'll Learn</h4>
+                <ul>
+                    <!-- Kamu bisa menambah atau mengubah daftar materi di sini -->
+                    <li>Pengenalan tools Figma</li>
+                    <li>Wireframing & Layouting</li>
+                    <li>Tipografi & Pemilihan Warna</li>
+                    <li>Membuat Prototype Interaktif</li>
+                </ul>
+                
+                <h4>Benefits</h4>
+                <p>Siap membuat desain aplikasi/web sendiri, portfolio desain pertama, dan memahami prinsip UI modern.</p>
+                
+                <h4>Teacher</h4>
+                <div class="modal-teacher">
+                    <!-- GANTI FOTO GURU DI SINI DENGAN CARA YANG SEBELUMNYA -->
+                    <img src="Qadli.jpeg" alt="Guru Figma" class="modal-img-real">
+                    <div>
+                        <strong>Qadli Raissa Dzaky</strong>
+                        <p>Senior UI/UX Designer</p>
+                    </div>
+                </div>
+                
+                <h4>Price</h4>
+                <!-- UBAH HARGA DI SINI -->
+                <p class="modal-price">Rp 150.000 / bulan</p>
+                
+                <!-- UBAH PESAN OTOMATIS WHATSAPP DI BAGIAN data-msg -->
+                <a href="#" class="btn btn-primary chat-wa-dynamic" data-msg="Halo Codes Course, saya tertarik dengan kursus Figma Design. Boleh minta info pendaftarannya?">Ask Admin</a>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Scratch Modal -->
+    <div class="modal" id="modal-scratch">
+        <div class="modal-content">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <h2>Figma Design</h2>
+            <div class="modal-body">
+                
+                <h4>Overview</h4>
+                <p>Kursus coding visual yang dirancang khusus untuk memahami alur dan logika pemrograman tanpa harus mengetik kode rumit. Sangat cocok untuk anak dan pemula.</p>
+                
+                <h4>What You'll Learn</h4>
+                <ul>
+                    <!-- Kamu bisa menambah atau mengubah daftar materi di sini -->
+                    <li>Logika dasar pemrograman</li>
+                    <li>Membuat animasi sederhana</li>
+                    <li>Merancang game interaktif</li>
+                    <li>Problem solving dengan block-code</li>
+                </ul>
+                
+                <h4>Benefits</h4>
+                <p>Meningkatkan kreativitas, logika berpikir, dan memberikan fondasi kuat sebelum belajar bahasa pemrograman profesional.</p>
+                
+                <h4>Teacher</h4>
+                <div class="modal-teacher">
+                    <!-- GANTI FOTO GURU DI SINI DENGAN CARA YANG SEBELUMNYA -->
+                    <img src="Kanawa.png" alt="Guru Scartch" class="modal-img-real">
+                    <div>
+                        <strong>Kanawa Alfarezel Banyu Ramlan</strong>
+                        <p>Sudah Mengerjakan 20+ Project scratch</p>
+                    </div>
+                </div>
+                
+                <h4>Price</h4>
+                <!-- UBAH HARGA DI SINI -->
+                <p class="modal-price">Rp 100.000 / bulan</p>
+                
+                <!-- UBAH PESAN OTOMATIS WHATSAPP DI BAGIAN data-msg -->
+                <a href="#" class="btn btn-primary chat-wa-dynamic" data-msg="Halo Codes Course, saya tertarik dengan kursus Scratch. Boleh minta info pendaftarannya?">Ask Admin</a>
+                
+            </div>
+        </div>
+    </div>
+    <!-- English Modal -->
+    <div class="modal" id="modal-english">
+        <div class="modal-content">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <h2>English</h2>
+            <div class="modal-body">
+                
+                <h4>Overview</h4>
+                <p>Fokus pada praktik bahasa Inggris secara aktif. Kursus ini membantu murid untuk lebih percaya diri dalam menggunakan bahasa Inggris di kehidupan nyata.</p>
+                
+                <h4>What You'll Learn</h4>
+                <ul>
+                    <!-- Kamu bisa menambah atau mengubah daftar materi di sini -->
+                    <li>Pengayaan Vocabulary</li>
+                    <li>Grammar aplikatif</li>
+                    <li>Listening comprehension</li>
+                    <li>Speaking & Daily Conversations</li>
+                </ul>
+                
+                <h4>Benefits</h4>
+                <p>Lebih percaya diri berbicara bahasa Inggris, pelafalan yang lebih baik, dan siap menghadapi kebutuhan akademis/profesional.</p>
+                
+                <h4>Teacher</h4>
+                <div class="modal-teacher">
+                    <!-- GANTI FOTO GURU DI SINI DENGAN CARA YANG SEBELUMNYA -->
+                    <img src="Yusuf.jpeg" alt="Guru English" class="modal-img-real">
+                    <div>
+                        <strong>Fadhilah Yusuf Kurniawan</strong>
+                        <p>Pengalaman Bahasa Inggris 5+ Tahun</p>
+                    </div>
+                </div>
+                
+                <h4>Price</h4>
+                <!-- UBAH HARGA DI SINI -->
+                <p class="modal-price">Rp 80.000 / bulan</p>
+                
+                <!-- UBAH PESAN OTOMATIS WHATSAPP DI BAGIAN data-msg -->
+                <a href="#" class="btn btn-primary chat-wa-dynamic" data-msg="Halo Codes Course, saya tertarik dengan kursus English. Boleh minta info pendaftarannya?">Ask Admin</a>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
